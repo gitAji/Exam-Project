@@ -43,11 +43,11 @@
     box-sizing: border-box;
     margin: 0;
     padding: 0;
-   
+
 }
 
 body {
-    font-family: var(--primary-font);   
+    font-family: var(--primary-font);
     background-color: #fff;
 
 }
@@ -73,7 +73,7 @@ h6 {
 }
 
 h2 {
-    font-size: 22px;
+    font-size: 20px;
     padding: 10px;
     letter-spacing: 2.8px;
     text-transform: uppercase;
@@ -81,8 +81,7 @@ h2 {
 }
 
 h3 {
-    font-size: 18px;
-
+    font-size: 22px;
     color: var(--white-color);
     letter-spacing: 1.5px;
 }
@@ -240,7 +239,37 @@ h1 {
 .navbar {
     display: flex;
 
+}
 
+/* breadcrumb */
+.breadcrumb {
+    padding: 5px 5px;
+    list-style: none;
+    background-color: var(--shadow-color);
+}
+
+.breadcrumb li {
+    display: inline;
+}
+
+.breadcrumb li+li:before {
+    padding: 10px 10px;
+    color: var(--dark-color);
+    content: "|\00a0";
+}
+
+.breadcrumb li a {
+    color: var(--dark-color);
+    font-size: 20px;
+}
+
+.breadcrumb li a:hover {
+    color: var(--primary-color);
+}
+
+/* active link on the breadcrumb marked in a different color */
+.b-active {
+    color: var(--secondary-color);
 }
 
 .container {
@@ -387,9 +416,11 @@ hr {
     cursor: pointer;
 
 }
+
 .post:hover {
     box-shadow: 0px 0px 20px var(--light-color);
 }
+
 .post-img {
     display: block;
     width: 100%;
@@ -426,11 +457,13 @@ hr {
     margin-bottom: 10px;
     letter-spacing: 1px;
 }
+
 .page-title h4:hover {
     cursor: pointer;
     color: var(--primary-color);
     transition: .5s ease-in-out;
 }
+
 .post-label {
     display: flex;
     justify-content: space-between;
@@ -489,13 +522,14 @@ hr {
 }
 
 /* pagination starts here */
-.pagination{
+.pagination {
     display: flex;
     justify-content: center;
     align-items: center;
     margin-block: 12px;
 }
-.pagination a{
+
+.pagination a {
     padding: 10px;
     margin: 0 5px;
     border: 1px solid var(--dark-color);
@@ -504,16 +538,20 @@ hr {
     background-color: var(--white-color);
     cursor: pointer;
 }
-.pagination a:hover{
+
+.pagination a:hover {
     background-color: var(--primary-color);
     color: var(--white-color);
     transition: background 0.3s ease-in-out;
 }
-.pagination .active{
+
+.pagination .active {
     background-color: var(--primary-color);
     color: var(--white-color);
 }
+
 /* pagination ends here */
+
 
 
 .connect-us {
@@ -636,7 +674,7 @@ footer p {
 .address {
     text-align: left;
     margin-right: 20px;
-   width: 20%;
+    width: 20%;
 }
 
 .footer-content {
@@ -662,6 +700,125 @@ footer p {
     transition: color 0.3s ease-in-out;
 }
 
+/* blog section */
+.post-container{
+display: flex;
+
+  
+
+}
+.blog-posts {
+
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+    margin: 10px;
+}
+
+
+/* blog section ends */
+
+/* contact section */
+.contact-container {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+.contact-img {
+    width: 40%;
+    align-self: start;
+    height: 200px;
+    border-radius: 50%;
+    margin: 12px;
+    margin-bottom: 20px;
+
+}
+
+.contact-img img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+
+}
+
+.contact-form {
+    width: 50%;
+    margin: 12px auto;
+    padding: 12px;
+    box-shadow: 0px 0px 20px var(--shadow-color);
+}
+
+.page-title {
+    display: block;
+    margin: 0 auto;
+    text-decoration: underline;
+}
+
+.form-title {
+    display: block;
+    margin: 12px auto;
+    text-align: center;
+    font-size: 1.5rem;
+}
+
+.contact-form input {
+    width: 100%;
+    height: 40px;
+    border-radius: 10px;
+    border: 1px solid var(--light-color);
+    padding: 10px;
+    margin: 12px auto;
+    font-size: .8rem;
+    font-weight: bold;
+    letter-spacing: 1px;
+}
+
+.contact-form input::placeholder {
+    font-size: 12px;
+    color: var(--light-color);
+}
+
+.contact-form textarea {
+    width: 100%;
+    height: 200px;
+    border-radius: 10px;
+    border: 1px solid var(--light-color);
+    padding: 10px;
+    margin: 0 auto;
+    font-size: .8rem;
+    font-weight: bold;
+    letter-spacing: 1px;
+}
+
+.contact-form textarea::placeholder {
+    font-size: 12px;
+    color: var(--light-color);
+}
+
+.contact-form button {
+    margin-block: 12px;
+    letter-spacing: 2px;
+    background-color: var(--dark-color);
+    cursor: pointer;
+}
+
+.contact-form button:hover {
+    background-color: var(--primary-color);
+    transition: color 0.3s ease-in-out;
+}
+
+.form-error {
+    display: block;
+    color: var(--light-color);
+    font-size: .6rem;
+    margin-bottom: 12px;
+}
+
+/* media queries */
 
 @media screen and (max-width: 768px) {
     #logo h2 {
@@ -679,79 +836,93 @@ footer p {
     .hamburger {
         display: block;
     }
-    .trending-img {
 
-    }
+    .trending-img {}
+
     .trending-text {
         width: 100%;
-       padding:80px;    
+        padding: 80px;
         bottom: 0px;
     }
-    .section{
-     flex-direction: column;
+
+    .section {
+        flex-direction: column;
     }
-.latest-container {
-   
-    flex-direction: column;
-   flex-wrap: wrap;
-   
-}
-.post-label{
 
-    flex-wrap: wrap;
-}
-.post-label button{
-   padding: 5px;
-}
-.pagination{
-    flex-wrap: wrap;
-}
-.pagination a{
-    margin: 0 auto;
-    padding: 6px;
-    margin: 0 5px;
-   
-}
-.connect-us{
-    padding: 12px;
-}
-.connect-us-container{
-   flex-wrap: wrap;
-   justify-content:space-evenly;
+    .latest-container {
 
-}
-.newsletter{
-    flex-wrap: wrap;
-    margin-top: 40px;
-}
-.newsletter button{
-    width: 100%;
-    margin-block: 20px;
-    margin-inline: 2px;
-}
-.footer-about{
-    flex-wrap: wrap;
-    justify-content: space-evenly;
-  
-}
-.about-text{
-   
-    padding: 0px;
-   
-    margin-top: 20px;
-    text-align: left;
-    width: 50%;
-}
-.address{
-   
-width:40%;
-  padding: 0px;
-  margin-left: 12px;
-  margin: 0px;
-    text-align: left;
-}
-.footer-content{
-  flex-direction: column;
-  margin: 0px;
-}
+        flex-direction: column;
+        flex-wrap: wrap;
+
+    }
+
+    .post-label {
+
+        flex-wrap: wrap;
+    }
+
+    .post-label button {
+        padding: 5px;
+    }
+
+    .pagination {
+        flex-wrap: wrap;
+    }
+
+    .pagination a {
+        margin: 0 auto;
+        padding: 6px;
+        margin: 0 5px;
+
+    }
+
+    .connect-us {
+        padding: 12px;
+    }
+
+    .connect-us-container {
+        flex-wrap: wrap;
+        justify-content: space-evenly;
+
+    }
+
+    .newsletter {
+        flex-wrap: wrap;
+        margin-top: 40px;
+    }
+
+    .newsletter button {
+        width: 100%;
+        margin-block: 20px;
+        margin-inline: 2px;
+    }
+
+    .footer-about {
+        flex-wrap: wrap;
+        justify-content: space-evenly;
+
+    }
+
+    .about-text {
+
+        padding: 0px;
+
+        margin-top: 20px;
+        text-align: left;
+        width: 50%;
+    }
+
+    .address {
+
+        width: 40%;
+        padding: 0px;
+        margin-left: 12px;
+        margin: 0px;
+        text-align: left;
+    }
+
+    .footer-content {
+        flex-direction: column;
+        margin: 0px;
+    }
 }
