@@ -372,7 +372,7 @@ hr {
     display: flex;
     justify-content: space-around;
     align-items: center;
-    flex-wrap: nowrap;
+    flex-wrap: wrap;
     margin: 12px;
 
 }
@@ -693,7 +693,7 @@ footer p {
 .latest-container {
    
     flex-direction: column;
-   
+   flex-wrap: wrap;
    
 }
 .post-label{
