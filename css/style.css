@@ -665,7 +665,7 @@ footer p {
 
 @media screen and (max-width: 564px) {
     #logo h2 {
-        font-size: 10px;
+        font-size: 16px;
     }
 
     nav ul {
@@ -684,7 +684,7 @@ footer p {
     }
     .trending-text {
         width: 100%;
-       padding:60px;    
+       padding:80px;    
         bottom: 0px;
     }
     .section{
@@ -693,7 +693,7 @@ footer p {
 .latest-container {
    
     flex-direction: column;
-    flex-wrap: wrap;
+   
    
 }
 .post-label{
