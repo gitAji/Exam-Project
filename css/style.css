@@ -665,6 +665,12 @@ footer p {
     nav ul {
         display: none;
     }
+    .search {
+        display: none;
+    }
+    .hamburger {
+        display: block;
+    }
     
 }
 @media screen and (max-width: 468px) {
