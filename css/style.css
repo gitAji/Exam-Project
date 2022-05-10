@@ -661,19 +661,9 @@ footer p {
     border-bottom: 1px solid var(--primary-color);
     transition: color 0.3s ease-in-out;
 }
-@media screen and (max-width: 768px) {
-    nav ul {
-        display: none;
-    }
-    .search {
-        display: none;
-    }
-    .hamburger {
-        display: block;
-    }
-    
-}
-@media screen and (max-width: 468px) {
+
+
+@media screen and (max-width: 564px) {
     #logo h2 {
         font-size: 10px;
     }
