@@ -685,7 +685,7 @@ footer p {
     .trending-text {
         width: 100%;
        padding:60px;    
-        bottom: 20px;
+        bottom: 0px;
     }
     .section{
      flex-direction: column;
@@ -693,6 +693,7 @@ footer p {
 .latest-container {
    
     flex-direction: column;
+    flex-wrap: wrap;
    
 }
 .post-label{
