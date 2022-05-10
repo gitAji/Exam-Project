@@ -630,11 +630,11 @@ footer p {
 .about-text {
     padding: 12px;
     width: 50%;
-    text-align: justify;
+    text-align: left;
 }
 
 .address {
-    text-align: justify;
+    text-align: left;
     margin-right: 20px;
    width: 20%;
 }
