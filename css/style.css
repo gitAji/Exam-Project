@@ -701,53 +701,86 @@ footer p {
 }
 
 /* blog section */
-.post-container{
-display: flex;
-
-  
-
-}
-.blog-posts {
-
+.post-container {
     display: flex;
+}
+
+.post-content {
+    display: flex;
+    width: 70%;
+    padding: 12px;
+    margin: 12px;
+    box-shadow: 0px 0px 20px var(--shadow-color);
+}
+
+.blog-right {
+    display: flex;
+    width: 30%;
+    padding: 12px;
+    margin: 12px;
+    box-shadow: 0px 0px 20px var(--shadow-color);
+}
+
+.blog-posts {
+    display: flex;
+    flex-wrap: wrap;
+    margin: 12px auto;
 
 }
-.post-heading{
+
+.post-heading {
     display: flex;
     flex-direction: column;
     justify-content: space-between;
     align-items: center;
     margin: 10px;
 }
-.post-heading h4{
-    font-size: 1.2rem;
+
+.post-heading h4 {
+    font-size: 1rem;
     font-weight: bold;
 
 }
-.post-date{
+
+.post-date {
     display: flex;
     flex-direction: column;
     margin: 12px;
 }
-.post-image{
-    display: flex;
-    flex-direction: column;
-    justify-content: space-between;
-    align-items: center;
-    margin: 12px;
+
+.post-image {
+    display: block;
+    width: 90%;
+    height: 300px;
+    margin: 0 auto;
+
+    border: 1px solid var(--light-color);
+    box-shadow: 0px 0px 20px var(--shadow-color);
+
 }
-.post-image img{
+
+.post-image img {
     width: 100%;
     height: 100%;
-    object-fit: cover;
-    
-}
-.post-content{
-    display: flex;
-    flex-direction: column;
-    justify-content: space-between;
     align-items: center;
-    margin: 10px;
+    object-fit: cover;
+    background-size: cover;
+
+}
+
+.post-body {
+    display: block;
+    width: 95%;
+    margin: 12px;
+    padding: 12px 12px;
+    letter-spacing: 1.75px;
+    font-size: 1.1rem;
+
+}
+.post-body p {
+    margin: 0;
+    padding: 0;
+    justify-content:justify;
 }
 
 /* blog section ends */
@@ -956,5 +989,16 @@ display: flex;
     .footer-content {
         flex-direction: column;
         margin: 0px;
+    }
+
+    /* single post section */
+    .post-content {
+        width: 100%;
+        flex-direction: column;
+    }
+
+    .blog-right {
+        width: 100%;
+        flex-direction: column;
     }
 }
