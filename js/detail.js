@@ -18,14 +18,16 @@ function listData(post) {
     out.innerHTML = `
     <div class="a-post">
         <div class="post-heading"><h4>${post.title.rendered}</h4></div>
+       
+        <div class="post-image">
+        <img src="${post.featured_images.large}" alt="">
+        </div>
         <div class="post-date">
         <p>
             Posted Date: <span>${post.date}</span>
 
         </p>
-        </div>
-        <div class="post-image">
-        <img src="${post.featured_images.large}" alt="">
+        
         </div>
             <div class="post-body">
                 ${post.content.rendered}

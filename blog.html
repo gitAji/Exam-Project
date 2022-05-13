@@ -7,7 +7,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Blog</title>
     <link rel="stylesheet" href="css/style.css" />
-    <script src="js/script.js" defer></script>
+    <script src="js/blog.js" defer></script>
     <script src="https://kit.fontawesome.com/4c81fc0dca.js" crossorigin="anonymous"></script>
 </head>
 
@@ -62,12 +62,21 @@
     <div class="section">
         <div class="page-title">
             <h2>Blog</h2>
+           
         </div>
     </div>
   
     <!-- body start here -->
    
     <div class="post-container">
+        <div class="post-label">
+            <a href="#"><button id="all" class="active">All</button></a>
+            <button id="food">Food</button>
+            <button id="health">Health</button>
+            <button id="lifestyle">Lifestyle</button>
+            <button id="travel">Travel</button>
+            <button id="fashion">Fashion</button>
+        </div>
     <div class="blog-posts">
 Waiting for posts to load...
     </div>
@@ -76,47 +85,50 @@ Waiting for posts to load...
 </body>
 <!-- blog posts here -->
         <!-- footer starts here -->
-        <footer>
-            <div class="footer-logo">
-                <a href="index.html">
-                    <h3>LIFE HACKS</h3>
-                </a>
-            </div>
-            <hr />
-            <div class="footer-about">
-                <div class="about-text">
-                    <p>
-                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Expedita
-                        animi suscipit facilis modi voluptatibus necessitatibus, corporis
-                        placeat repellat est praesentium autem adipisci corrupti accusantium
-                        nesciunt.
-                    </p>
-                </div>
-                <div class="address">
-                    <p>Address: Nye Gate30 5096 Bergen Norway</p>
-                </div>
-            </div>
-            <div class="footer-content">
-                <div class="links">
-                    <a href="">Our companies</a>
-                    <a href="">Our partners</a>
-                    <a href="">For investors</a>
-                </div>
-
-                <div class="links">
-                    <a href="">Become a columnist</a>
-                    <a href="">Report about articles</a>
-                    <a href="">Re-post an article</a>
-                </div>
-
-                <div class="links">
-                    <a href="">Privacy Policy</a>
-                    <a href="">Terms & Conditions</a>
-                    <a href="">Contact us</a>
-                </div>
-            </div>
-
-            <p>All rights reserved | Copyright &copy;2022</p>
-        </footer>
-
-</html>
+       
+<footer>
+    <div class="footer-logo">
+      <a href="index.html"><h3>LIFE HACKS</h3></a>
+    </div>
+    <hr>
+    <div class="footer-about">
+      <div class="about-text">
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Expedita animi suscipit facilis modi voluptatibus necessitatibus, corporis placeat repellat est praesentium autem adipisci corrupti accusantium nesciunt.</p>
+      </div>
+      <div class="address">
+        <p>
+          Address:
+          Nye Gate30
+          5096
+          Bergen
+          Norway</p>
+      </div>
+    </div>
+    <div class="footer-content">
+      <div class="links">
+  
+        <a href="#">Our companies</a>
+        <a href="#">Our partners</a>
+        <a href="#">For investors</a>
+      </div>
+  
+        <div class="links">
+          <a href="#">Become a columnist</a>
+          <a href="#">Report about articles</a>
+          <a href="#">Re-post an article</a>
+        </div>
+     
+  
+        <div class="links">
+          <a href="#">Privacy Policy</a>
+          <a href="#">Terms & Conditions</a>
+          <a href="contact.html">Contact us</a>
+        </div>
+      </div>
+   
+  
+   
+    <p>All rights reserved | Copyright &copy;2022</p>
+  </footer>
+  
+  </html>
