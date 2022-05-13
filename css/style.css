@@ -766,7 +766,7 @@ text-align: left;
 .about-us-text {
     display: block;
     position: absolute;
-    bottom: 12px;
+    top: 12px;
     left:-15px;
     width: 50%;
     height: auto;
