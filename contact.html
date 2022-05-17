@@ -1,175 +1,167 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Contact-Life Hacks</title>
-    <link rel="stylesheet" href="css/style.css" />
-    <script src="js/hamburger.js"></script>
-    <script
-      src="https://kit.fontawesome.com/4c81fc0dca.js"
-      crossorigin="anonymous"
-    ></script>
-  </head>
 
-  <body>
-    <div class="header">
-      <div class="navbar">
-        <nav>
-          <div id="logo">
-            <a href="index.html"><h2>LIFE HACKS</h2></a>
-          </div>
+<head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Contact-Life Hacks</title>
+  <link rel="stylesheet" href="css/style.css" />
+  <link rel="shortcut icon" href="images/favicon.ico" type="image/x-icon">
+  <script src="js/hamburger.js" defer></script>
+  <script src="js/contact.js" defer></script>
+  <script src="https://kit.fontawesome.com/4c81fc0dca.js" crossorigin="anonymous"></script>
+</head>
 
-          <ul>
-            <a href="index.html" class="nav-link">
-              <li>Home</li>
-            </a>
-            <a href="about.html" class="nav-link">
-              <li>About</li>
-            </a>
-            <a href="blog.html" class="nav-link">
-              <li>Blog</li>
-            </a>
-            <a href="contact.html" class="nav-link">
-              <li>Contacts</li>
-            </a>
-          </ul>
-          <!-- search bar starts here -->
-          <div class="search">
-            <input type="text" placeholder="Search" />
+<body>
+  <div class="header" id="top">
+    <div class="navbar">
 
-            <i class="fas fa-search"></i>
-          </div>
-          <!-- hamburger-menu  -->
-          <div class="hamburger">
-            <div class="menu-bar1"></div>
-            <div class="menu-bar2"></div>
-            <div class="menu-bar3"></div>
-          </div>
-        </nav>
+      <div id="logo">
+        <a href="index.html">
+          <h2>LIFE HACKS</h2>
+        </a>
       </div>
-    </div>
-    <!-- nav-bar ends here -->
-    <!-- breadcrumb starts here -->
-    <div class="breadcrumb">
+      <div class="nav-menu">
         <ul>
-            <li><a href="index.html">Home</li></a>
-            <li class="b-active">Contacts</li>
+          <li class="nav-item">
+            <a href="index.html" class="nav-link">Home</a>
+          </li>
+          <li class="nav-item">
+            <a href="about.html" class="nav-link">About</a>
+          </li>
+          <li class="nav-item">
+            <a href="blog.html" class="nav-link">Blog</a>
+          </li>
+          <li class="nav-item">
+            <a href="contact.html" class="nav-link">Contact</a>
+          </li>
+
         </ul>
+      </div>
+      <!-- search bar starts here -->
+      <div class="search">
+        <input type="text" placeholder="Search" />
+
+        <i class="fas fa-search"></i>
+      </div>
+      <!-- hamburger-menu  -->
+      <div class="hamburger">
+        <div class="menu-bar1"></div>
+        <div class="menu-bar2"></div>
+        <div class="menu-bar3"></div>
+      </div>
+      </nav>
     </div>
-<!-- breadcrumb ends here -->
-<div class="section">
+  </div>
+  <!-- nav-bar ends here -->
+  <!-- breadcrumb starts here -->
+  <div class="breadcrumb">
+    <ul>
+      <li><a href="index.html">Home</li></a>
+      <li class="b-active">Contacts</li>
+    </ul>
+  </div>
+  <!-- breadcrumb ends here -->
+  <div class="section">
     <div class="page-title">
       <h2>Contact</h2>
     </div>
+  </div>
+  </div>
+  <div class="contact-container">
+    <div class="contact-img">
+      <img src="images/contact.jpg" alt="" />
+      <h3>Become a columnist today!</h3>
+
+    </div>
+    <div class="contact-form">
+      <div class="form-title">
+        <h3>Drop us a message!</h3>
+      </div>
+      <form id="form">
+        <div>
+          <label for="fullName">Full Name</label>
+          <input type="text" name="fullName" id="fullName" placeholder="full name" />
+          <div class="form-error" id="fullNameError" placeholder="d">
+            Please enter your first name
+          </div>
+        </div>
+        <div>
+          <label for="subject">Subject</label>
+          <input type="text" name="subject" id="subject" placeholder="subject" />
+
+          <div class="form-error" id="subjectError">
+            Must have a value with a minimum length of 10
+          </div>
+        </div>
+        <div>
+          <label for="email">Email</label>
+          <input type="email" name="email" id="email" placeholder="Email" />
+          <div class="form-error" id="emailError">Please enter valid email</div>
+        </div>
+        <div>
+          <label for="address">Address</label>
+          <input type="text-area" name="address" id="address" placeholder="Address" />
+          <div class="form-error" id="addressError">
+            Must have a value with a minimum length of 25
+          </div>
+        </div>
+
+        <button class="contact">Submit</button>
+      </form>
     </div>
   </div>
-<div class="contact-container">
-<div class="contact-img">
-<img src="images/contact.jpg" alt="" />
-<h3>Become a columnist today!</h3>
+</body>
 
-</div>
-<div class="contact-form">
-    <div class="form-title">
-<h3>Drop us a message!</h3>
-</div>
-        <form id="form">
-          <div>
-            <label for="fullName">Full Name</label>
-            <input
-              type="text"
-              name="fullName"
-              id="fullName"
-              placeholder="full name"
-            />
-            <div class="form-error" id="fullNameError" placeholder="d">
-              Please enter your first name
-            </div>
-          </div>
-          <div>
-            <label for="subject">Subject</label>
-            <input
-              type="text"
-              name="subject"
-              id="subject"
-              placeholder="subject"
-            />
-  
-            <div class="form-error" id="subjectError">
-              Must have a value with a minimum length of 10
-            </div>
-          </div>
-          <div>
-            <label for="email">Email</label>
-            <input type="email" name="email" id="email" placeholder="Email" />
-            <div class="form-error" id="emailError">Please enter valid email</div>
-          </div>
-          <div>
-            <label for="address">Address</label>
-            <input
-              type="text-area"
-              name="address"
-              id="address"
-              placeholder="Address"
-            />
-            <div class="form-error" id="addressError">
-              Must have a value with a minimum length of 25
-            </div>
-          </div>
-  
-          <button class="contact">Submit</button>
-        </form>
-    </div>
-</div>
-  </body>
-  
 <footer>
-    <div class="footer-logo">
-      <a href="index.html"><h3>LIFE HACKS</h3></a>
+  <div class="footer-logo">
+    <a href="index.html">
+      <h3>LIFE HACKS</h3>
+    </a>
+  </div>
+  <hr>
+  <div class="footer-about">
+    <div class="about-text">
+      <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Expedita animi suscipit facilis modi voluptatibus
+        necessitatibus, corporis placeat repellat est praesentium autem adipisci corrupti accusantium nesciunt.</p>
     </div>
-    <hr>
-    <div class="footer-about">
-      <div class="about-text">
-        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Expedita animi suscipit facilis modi voluptatibus necessitatibus, corporis placeat repellat est praesentium autem adipisci corrupti accusantium nesciunt.</p>
-      </div>
-      <div class="address">
-        <p>
-          Address:
-          Nye Gate30
-          5096
-          Bergen
-          Norway</p>
-      </div>
+    <div class="address">
+      <p>
+        Address:
+        Nye Gate30
+        5096
+        Bergen
+        Norway</p>
     </div>
-    <div class="footer-content">
-      <div class="links">
-  
-        <a href="#">Our companies</a>
-        <a href="#">Our partners</a>
-        <a href="#">For investors</a>
-      </div>
-  
-        <div class="links">
-          <a href="#">Become a columnist</a>
-          <a href="#">Report about articles</a>
-          <a href="#">Re-post an article</a>
-        </div>
-     
-  
-        <div class="links">
-          <a href="#">Privacy Policy</a>
-          <a href="#">Terms & Conditions</a>
-          <a href="contact.html">Contact us</a>
-        </div>
-      </div>
-   
-  
-      <div class="backtotop">
-        <a href="#top"> <i class="fas fa-caret-square-up fa-2x"></i></a>
-           </div>
-    <p>All rights reserved | Copyright &copy;2022</p>
-  </footer>
-  
-  </html>
+  </div>
+  <div class="footer-content">
+    <div class="links">
+
+      <a href="#">Our companies</a>
+      <a href="#">Our partners</a>
+      <a href="#">For investors</a>
+    </div>
+
+    <div class="links">
+      <a href="#">Become a columnist</a>
+      <a href="#">Report about articles</a>
+      <a href="#">Re-post an article</a>
+    </div>
+
+
+    <div class="links">
+      <a href="#">Privacy Policy</a>
+      <a href="#">Terms & Conditions</a>
+      <a href="contact.html">Contact us</a>
+    </div>
+  </div>
+
+
+  <div class="backtotop">
+    <a href="#top"> <i class="fas fa-caret-square-up fa-2x"></i></a>
+  </div>
+  <p>All rights reserved | Copyright &copy;2022</p>
+</footer>
+
+</html>

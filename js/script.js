@@ -1,4 +1,4 @@
-
+// show all category post ,max 6 post
 // filter out posts by category
 
 
@@ -55,7 +55,7 @@ function allPosts(posts) {
 
 
 }
-
+// first 3 latest post displayed
 function newLatest(){
     const latestUrl='https://blog.norgetamil.com/wp-json/wp/v2/posts?_embed';
     fetch(latestUrl)
@@ -98,5 +98,75 @@ function newList(posts){
         </div>
             `;
     }
-    latest.innerHTML=latestP;
+    latest.innerHTML=latestP; // latest post displayed
 }
+
+
+// filter out posts by category
+//6 post only displayed,when clicking on category btn it should load 6 post that related to the category
+
+
+  const categoryUrl='https://blog.norgetamil.com/wp-json/wp/v2/posts?_embed';
+  fetch(categoryUrl)
+  .then(response => response.json())
+  .then(data => {
+      categoryList(data);
+      //console.log(data);
+      //console.log(catName);
+      
+  }
+  )
+  .catch(error => allPost.innerHTML = "Something is wrong!");
+  
+  const postLabel=document.querySelector(".post-label");
+
+  
+
+function categoryList(cats){
+  postLabel.addEventListener("click",function(e){
+  const catChosen=e.target.id;
+console.log(catChosen);
+  let filteredList=[];
+  for(let cat of cats){
+    console.log(cat);
+if(cat._embedded["wp:term"][0][0].name==catChosen){
+ filteredList=cats.filter((item)=>item.value === catChosen);
+}
+else{
+  filteredList=cats.slice();
+}
+
+
+  }
+  console.log(filteredList);
+  let catList="";
+  for(let post of filteredList){
+    catList += `
+    <div class="post">
+    <a href="post.html?id=${post.id}">
+      <div class="post-img">
+      <img src="${post._embedded['wp:featuredmedia']['0'].source_url}" alt="">
+
+      </div>
+      <div class="post-details">
+        <p>
+          Date: <span>${post.date}</span>
+          <p>
+            <p>Category: <span>${post._embedded["wp:term"][0][0].name} </span></p>
+
+      </div>
+      <div class="post-title">
+        <h4>
+        ${post.title.rendered}   
+        </h4>
+      </div>
+    </a>
+    </div>
+        `;
+ 
+    
+  }
+  allPost.innerHTML = catList;
+});
+}
+

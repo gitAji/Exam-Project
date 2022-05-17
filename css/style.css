@@ -112,20 +112,21 @@ button:hover {
 
 .navbar {
     display: flex;
+    justify-content: space-between;
+    align-items: center;
 }
 
-nav {
+.nav-menu {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    width: 100%;
     height: 100%;
     color: var(--dark-color);
     background-color: var(--white-color);
 
 }
 
-nav ul {
+.nav-menu ul {
     display: flex;
     text-decoration: none;
     align-items: center;
@@ -133,7 +134,7 @@ nav ul {
 
 }
 
-nav ul li {
+.nav-menu ul li {
     display: flex;
     justify-content: flex-end;
     padding: 20px 20px;
@@ -141,31 +142,36 @@ nav ul li {
 
 }
 
-nav ul li:hover {
+.nav-menu ul li:hover {
     color: var(--primary-color);
     border-bottom: 1px solid var(--primary-color);
 }
 
 #logo {
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
     color: var(--primary-color);
-    padding: 20px 20px;
-   
+    padding: 20px 40px;
+
 
 
 }
+
 .backtotop {
     position: fixed;
     bottom: 20px;
     right: 20px;
     color: var(--light-color);
-    padding: 1px;
+    padding: 5px;
     cursor: pointer;
-    
+
 }
+
 i.fas {
-    font-size: 20px;
+    font-size: 25px;
     margin: 0 1px;
-    color: var(--primary-color);  
+    color: var(--primary-color);
 }
 
 .hamburger {
@@ -179,14 +185,16 @@ i.fas {
     z-index: 10;
 
 }
-.hamburger-menu{
- display: none;
- z-index: 10;
+
+.hamburger-menu {
+    display: flex;
+
 }
+
 .hamburger-menu ul {
-   
-  
-    top:0;
+
+    display: none;
+    top: 0;
     right: 50%;
     background-color: var(--white-color);
     padding: 20px;
@@ -194,19 +202,19 @@ i.fas {
     box-shadow: 0px 0px 10px var(--shadow-color);
     z-index: 10;
 }
-.hamburger-menu ul li a{
+
+.hamburger-menu ul li a {
     display: block;
     padding: 10px;
     text-decoration: none;
     color: var(--light-color);
-  
+
 }
-.hamburger-menu.overlay{
-    visibility: visible;
-    opacity: 1;
-    padding-top:100px;
-    background:rgba(0,0,0,0.5);
-  }
+
+
+
+
+
 .menu-bar1,
 .menu-bar2,
 .menu-bar3 {
@@ -527,6 +535,7 @@ hr {
     transition: background 0.3s ease-in-out;
     color: var(--dark-color);
 }
+
 button.active {
     background-color: var(--primary-color);
     transition: background 0.3s ease-in-out;
@@ -713,7 +722,7 @@ footer p {
 .about-text {
     padding: 12px;
     width: 50%;
-text-align: left;
+    text-align: left;
 }
 
 
@@ -745,32 +754,36 @@ text-align: left;
     border-bottom: 1px solid var(--primary-color);
     transition: color 0.3s ease-in-out;
 }
+
 /* about section */
 .about-us-img {
     display: block;
     position: relative;
-    width:auto;
+    width: auto;
     height: 400px;
-   margin:12px;
-   object-fit: cover;
+    margin: 12px;
+    object-fit: cover;
 }
+
 .about-us-img img {
     width: 100%;
     height: 100%;
     object-fit: cover;
     opacity: .8;
 }
+
 .about-us-text {
     display: block;
     position: absolute;
     top: 420px;
-    left:-15px;
+    left: -15px;
     width: 50%;
     height: auto;
     margin: 0 auto;
 
-   
+
 }
+
 .about-us-text h5 {
     font-size: .7rem;
     font-weight: bold;
@@ -782,23 +795,24 @@ text-align: left;
     margin: 10px 50px;
     padding: 10px;
 }
-.bottom{
+
+.bottom {
     display: flex;
     flex-wrap: nowrap;
     justify-content: space-between;
     align-items: center;
     margin: 0 auto;
     padding: 12px;
-    background-color: var(--dark-color);
     color: var(--light-color);
-    
+
 }
 
-.bottom div{
-    margin:20px 20px;
-    width:33%;
+.bottom div {
+    margin: 20px 20px;
+    width: 33%;
 }
-.bottom div h5{
+
+.bottom div h5 {
     font-size: .7rem;
     font-weight: bold;
     color: var(--dark-color);
@@ -809,11 +823,12 @@ text-align: left;
     margin: 5px 0px;
     padding: 5px;
 }
+
 /* about section ends */
 
 /* blog section */
 .post-container {
-  
+    display: flex;
 }
 
 .post-content {
@@ -838,12 +853,14 @@ text-align: left;
     margin: 12px auto;
 
 }
+
 .load-more {
     display: flex;
     justify-content: center;
     align-items: center;
     margin: 12px auto;
 }
+
 #load-more {
     padding: 12px 20px;
     margin: 0 auto;
@@ -852,6 +869,7 @@ text-align: left;
     text-align: center;
     cursor: pointer;
 }
+
 #load-more:hover {
     background-color: var(--primary-color);
     transition: color 0.3s ease-in-out;
@@ -879,8 +897,8 @@ text-align: left;
 
 .post-image {
     display: block;
-    width: 90%;
-    height: 300px;
+    width: 100%;
+    height: 400px;
     margin: 0 auto;
 
     border: 1px solid var(--light-color);
@@ -906,10 +924,11 @@ text-align: left;
     font-size: 1.1rem;
 
 }
+
 .post-body p {
     margin: 0;
     padding: 0;
-    justify-content:justify;
+    justify-content: justify;
 }
 
 /* blog section ends */
@@ -923,11 +942,11 @@ text-align: left;
 }
 
 .contact-img {
-    display:flex;
+    display: flex;
     position: relative;
     min-height: 100px;
     max-height: 600px;
-    width: 100%;    
+    width: 100%;
     border-radius: 50%;
     margin: 12px;
     margin-bottom: 20px;
@@ -940,12 +959,13 @@ text-align: left;
     object-fit: cover;
 
 }
+
 .contact-img h3 {
     position: absolute;
     top: 200px;
-    right:150px;
+    right: 150px;
     padding: 15px;
-    color:var(--primary-color);
+    color: var(--primary-color);
     background-color: var(--shadow-color);
 }
 
@@ -1029,8 +1049,30 @@ text-align: left;
         font-size: 20px;
     }
 
-    nav ul {
-        display: none;
+    .nav-menu {
+        position: fixed;
+        left: -100%;
+        top: 80px;
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        text-align: center;
+        transition: .3s;
+        background-color: var(--secondary-color);
+        z-index: 1;
+    }
+    .nav-menu ul {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        margin: 0;
+        padding: 0;
+    }
+
+    .nav-menu.active {
+
+        left: 0;
     }
 
     .search {
@@ -1040,6 +1082,19 @@ text-align: left;
     .hamburger {
         display: block;
     }
+
+    .hamburger.active .menu-bar1 {
+        transform: translateY(5px) rotate(45deg);
+    }
+
+    .hamburger.active .menu-bar2 {
+        opacity: 0;
+    }
+
+    .hamburger.active .menu-bar3 {
+        transform: translateY(-10px) rotate(-45deg);
+    }
+
 
     .trending-img {}
 
@@ -1059,7 +1114,12 @@ text-align: left;
         flex-wrap: wrap;
 
     }
-
+    .post{
+        width: 100%;
+        margin: 10px auto;
+        padding: 12px;
+    }
+    
     .post-label {
 
         flex-wrap: wrap;
@@ -1129,47 +1189,55 @@ text-align: left;
         flex-direction: column;
         margin: 0px;
     }
-/* about section */
+
+    /* about section */
     .about-container {
         flex-direction: column;
         justify-content: space-evenly;
-       
+
     }
-    .about-us-text{
-        bottom:0px;
+
+    .about-us-text {
+        bottom: 0px;
         width: 90%;
-        height:auto;
+        height: auto;
         margin: 0 auto;
     }
+
     .bottom {
         flex-direction: column;
-       
-       
+
+
     }
+
     .bottom div {
         margin: 0px;
         padding: 0px;
         width: 99%;
     }
+
     /* single post section */
     .post-container {
         flex-direction: column;
         justify-content: space-between;
         align-items: center;
         flex-wrap: wrap;
-      
+
     }
+
     .post-content {
-     width:90%;
+        width: 90%;
     }
 
     .blog-right {
-        width:90%;  
+        width: 90%;
     }
+
     .contact-form {
         width: 90%;
         flex-direction: column;
     }
+
     .contact-img h3 {
         display: none;
     }
