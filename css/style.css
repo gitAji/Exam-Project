@@ -992,7 +992,7 @@ footer p {
     display: flex;
     position: relative;
     min-height: 100px;
-    max-height: 500px;
+    max-height: 400px;
     width: 100%;
     border-radius: 50%;
     margin: 12px;
