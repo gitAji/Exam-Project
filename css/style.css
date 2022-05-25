@@ -152,7 +152,7 @@ button:hover {
     justify-content: flex-start;
     align-items: center;
     color: var(--primary-color);
-    padding: 20px 40px;
+    padding: 20px 12px;
 
 
 
@@ -525,6 +525,7 @@ hr {
 .post-label button {
     font-size: 14px;
     padding: 8px 12px;
+    margin: 12px;
     cursor: pointer;
     background-color: var(--white-color);
     color: var(--light-color);
@@ -719,27 +720,30 @@ footer p {
     justify-content: space-between;
 }
 
-.about-text{
+.about-text {
     display: flex;
- }
-     .about-text p {
-         padding: 0px;
-         margin-top: 20px;
-         width: 60%;
-         text-align:left;
-     }
- .address{
-     display: flex;
- }
-     .address p {
-         display: flex;
-         width: 40%;
-         padding: 0px;
-         margin-left: 12px;
-         margin: 0px;
-         text-align: left;
-     }
- 
+}
+
+.about-text p {
+    padding: 0px;
+    margin-top: 20px;
+    width: 60%;
+    text-align: left;
+}
+
+.address {
+    display: flex;
+}
+
+.address p {
+    display: flex;
+    width: 40%;
+    padding: 0px;
+    margin-left: 12px;
+    margin: 0px;
+    text-align: left;
+}
+
 
 .footer-content {
     display: flex;
@@ -784,7 +788,7 @@ footer p {
 .about-us-text {
     display: block;
     position: absolute;
-    top: 420px;
+    top: 400px;
     left: -15px;
     width: 50%;
     height: auto;
@@ -836,8 +840,11 @@ footer p {
 /* about section ends */
 
 /* blog section */
-.post-container {
+.a-post-container {
     display: flex;
+    flex-wrap: nowrap;
+    margin: 12px;
+
 }
 
 .post-content {
@@ -856,11 +863,42 @@ footer p {
     box-shadow: 0px 0px 20px var(--shadow-color);
 }
 
+.blog-right-title {
+
+    margin: 20px auto;
+    align-items: center;
+}
+
+.blog-right-post {
+    display: block;
+    margin: 0 auto;
+    padding: 12px;
+
+}
+
 .blog-posts {
     display: flex;
     flex-wrap: wrap;
     margin: 12px auto;
 
+}
+
+.back-btn {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 20px auto;
+    padding: 10px 30px;
+    background-color: var(--light-color);
+    color: var(--white-color);
+    cursor: pointer;
+    transition: background-color 0.3s ease-in-out;
+}
+
+.back-btn:hover {
+    background-color: var(--primary-color);
+    color: var(--white-color);
+    transition: background-color 0.3s ease-in-out;
 }
 
 .load-more {
@@ -1021,7 +1059,7 @@ footer p {
     border-radius: 10px;
     border: 1px solid var(--light-color);
     padding: 10px;
-    margin: 0 auto;
+    margin: 12px auto;
     font-size: .8rem;
     font-weight: bold;
     letter-spacing: 1px;
@@ -1051,6 +1089,17 @@ footer p {
     margin-bottom: 12px;
 }
 
+::placeholder {
+    color: var(--primary-color);
+
+}
+
+.success-message {
+    font-size: .7rem;
+    margin: 12px auto;
+    color: var(--success-color);
+}
+
 /* media queries */
 
 @media screen and (max-width: 768px) {
@@ -1070,6 +1119,7 @@ footer p {
         background-color: var(--secondary-color);
         z-index: 1;
     }
+
     .nav-menu ul {
         display: flex;
         flex-direction: column;
@@ -1123,12 +1173,13 @@ footer p {
         flex-wrap: wrap;
 
     }
-    .post{
+
+    .post {
         width: 100%;
         margin: 10px auto;
         padding: 12px;
     }
-    
+
     .post-label {
 
         flex-wrap: wrap;
@@ -1138,25 +1189,26 @@ footer p {
         padding: 5px;
     }
 
-    .pagination {
-        flex-wrap: wrap;
-    }
 
-    .pagination a {
-        margin: 0 auto;
-        padding: 6px;
-        margin: 0 5px;
-
-    }
 
     .connect-us {
         padding: 12px;
+    
     }
 
     .connect-us-container {
         flex-wrap: wrap;
         justify-content: space-evenly;
 
+    }
+    .connect-us-icons {
+       
+        display: flex;
+        justify-content: space-evenly;
+        align-items: center;
+        flex-wrap: nowrap;
+        margin-top: 10px;
+        padding: 10px;
     }
 
     .newsletter {
@@ -1168,8 +1220,9 @@ footer p {
         width: 100%;
         margin-block: 20px;
         margin-inline: 2px;
-        border-radius:  0;
+        border-radius: 0;
     }
+
     .newsletter input {
         width: 100%;
         margin-block: 20px;
@@ -1193,10 +1246,11 @@ footer p {
 
         width: 40%;
         padding: 0px;
-       
+
         margin: 0px;
         text-align: left;
     }
+
     .links a {
         padding: 12px 0px;
     }
@@ -1214,9 +1268,9 @@ footer p {
     }
 
     .about-us-text {
-        bottom: 0px;
-        width: 90%;
-        height: auto;
+        top: 370px;
+        width: 100%;
+        height: 0px;
         margin: 0 auto;
     }
 
@@ -1227,26 +1281,30 @@ footer p {
     }
 
     .bottom div {
-        margin: 0px;
+        margin: 10px;
+        padding: 10px;
         padding: 0px;
         width: 99%;
     }
 
     /* single post section */
-    .post-container {
+    .a-post-container {
         flex-direction: column;
-        justify-content: space-between;
-        align-items: center;
-        flex-wrap: wrap;
+
 
     }
 
     .post-content {
-        width: 90%;
+        flex-direction: column;
+        width: 100%;
+        margin: 0 auto;
+        margin-bottom: 20px;
     }
 
     .blog-right {
-        width: 90%;
+        flex-direction: column;
+        width: 100%;
+        margin: 0 auto;
     }
 
     .contact-form {

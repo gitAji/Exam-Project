@@ -41,6 +41,7 @@ latest += `
     </div>
 `;
 }
-result.innerHTML = latest;
+result.innerHTML = latest; //displaying latest post
     
 }
+

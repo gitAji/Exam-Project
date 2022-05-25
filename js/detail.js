@@ -1,4 +1,6 @@
 const out = document.querySelector(".post-content");
+const meta = document.querySelector("meta[name=description]");
+const title = document.querySelector("title");
 const queryString = document.location.search;
 const params = new URLSearchParams(queryString);
 const id = params.get("id");
@@ -6,16 +8,17 @@ const id = params.get("id");
 const url = "https://blog.norgetamil.com/wp-json/wp/v2/posts/" + id + "";;
 //const media="+ id +";
 fetch(url)
-    .then(response => response.json())
-    .then(data => {
-        console.log(data);
-        listData(data);
-    })
-    .catch(error => out.innerHTML = "Something is wrong!");
+  .then(response => response.json())
+  .then(data => {
+    console.log(data);
+    listData(data);
+  })
+  .catch(error => out.innerHTML = "Something is wrong!");
 
 function listData(post) {
 
-    out.innerHTML = `
+  let html = `
+   
     <div class="a-post">
         <div class="post-heading"><h4>${post.title.rendered}</h4></div>
        
@@ -36,6 +39,9 @@ function listData(post) {
         
 
   `;
+  out.innerHTML = html;
+  title.innerHTML = post.title.rendered;
+  meta.setAttribute("content", post.title.rendered);
 
 
 

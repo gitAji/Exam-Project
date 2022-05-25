@@ -78,33 +78,36 @@
     <div class="contact-form">
       <div class="form-title">
         <h3>Drop us a message!</h3>
+        <p class="success-message"></p>
       </div>
       <form id="form">
         <div>
           <label for="fullName">Full Name</label>
-          <input type="text" name="fullName" id="fullName" placeholder="full name" />
-          <div class="form-error" id="fullNameError" placeholder="d">
-            Please enter your first name
-          </div>
-        </div>
-        <div>
-          <label for="subject">Subject</label>
-          <input type="text" name="subject" id="subject" placeholder="subject" />
-
-          <div class="form-error" id="subjectError">
-            Must have a value with a minimum length of 10
+          <input type="text" name="fullName" id="fullName" placeholder="full name" class="error" />
+          <div class="form-error" id="nameError">
+            Should have minimum length of 5 characters.
           </div>
         </div>
         <div>
           <label for="email">Email</label>
-          <input type="email" name="email" id="email" placeholder="Email" />
-          <div class="form-error" id="emailError">Please enter valid email</div>
+          <input type="email" name="email" id="email" placeholder="Email" class="error" />
+          <div class="form-error" id="emailError">
+            Should have a valid email address.
+          </div>
         </div>
         <div>
-          <label for="address">Address</label>
-          <input type="text-area" name="address" id="address" placeholder="Address" />
-          <div class="form-error" id="addressError">
-            Must have a value with a minimum length of 25
+          <label for="subject">Subject</label>
+          <input type="text" name="subject" id="subject" placeholder="subject" class="error" />
+          <div class="form-error" id="subjectError">
+            Should have more than 15 characters.
+          </div>
+        </div>
+
+        <div>
+          <label for="message">Message</label>
+          <input type="text-area" name="message" id="message" placeholder="message" rows="4" maxlength="200" />
+          <div class="form-error" id="messageError">
+            Should have more than 25 characters.
           </div>
         </div>
 
