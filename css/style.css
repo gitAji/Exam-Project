@@ -718,30 +718,34 @@ footer p {
 .footer-about {
     display: flex;
     justify-content: space-between;
+    align-items: center;
+    margin: 12px;
 }
 
 .about-text {
-    display: flex;
+    width: 70%;
+
 }
 
 .about-text p {
-    padding: 0px;
-    margin-top: 20px;
-    width: 60%;
+    padding: 12px;
     text-align: left;
+    margin-left: 2px;
+    line-height: 1.5;
+    text-align: left;
+
 }
 
 .address {
-    display: flex;
+    width: 30%;
+
 }
 
 .address p {
-    display: flex;
-    width: 40%;
-    padding: 0px;
-    margin-left: 12px;
-    margin: 0px;
+    padding: 12px;
+
     text-align: left;
+    margin-left: 50px;
 }
 
 
@@ -1037,7 +1041,8 @@ footer p {
     font-size: 1.5rem;
 }
 
-.contact-form input[type="text"],[type="email"] {
+.contact-form input[type="text"],
+[type="email"] {
     width: 100%;
     height: 40px;
     border-radius: 10px;
@@ -1049,7 +1054,8 @@ footer p {
     letter-spacing: 1px;
 }
 
-.contact-form input[type="text"],[type="email"]::placeholder {
+.contact-form input[type="text"],
+[type="email"]::placeholder {
     font-size: 12px;
     color: var(--light-color);
 }
@@ -1190,7 +1196,7 @@ footer p {
 
     .connect-us {
         padding: 12px;
-    
+
     }
 
     .connect-us-container {
@@ -1198,8 +1204,9 @@ footer p {
         justify-content: space-evenly;
 
     }
+
     .connect-us-icons {
-       
+
         display: flex;
         justify-content: space-evenly;
         align-items: center;
@@ -1228,28 +1235,23 @@ footer p {
 
     .footer-about {
         flex-wrap: wrap;
-        justify-content: space-evenly;
+        justify-content: space-around;
 
     }
 
     .about-text {
-
-        padding: 0px 12px;
-        margin-top: 20px;
+        padding: 2px 2px;
         width: 60%;
     }
 
     .address {
-
+        padding: 2px 12px;
         width: 40%;
-        padding: 0px;
-
-        margin: 0px;
         text-align: left;
     }
 
     .links a {
-        padding: 12px 0px;
+        padding: 12px 12px;
     }
 
     .footer-content {
