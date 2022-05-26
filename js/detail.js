@@ -59,10 +59,10 @@ fetch(recentUrl)
     .catch(error => recentPosts.innerHTML = "Something is wrong!");
 
     function recentPost(posts) {
-    let recentList = "";
-  let post=posts.slice(0,3);
-  for (let post of posts) {
-       console.log(post);
+      const latestList=posts.slice(0,3);
+      console.log(latestList);
+      let recentList="";
+      for(let post of latestList){
 
         recentList += `
         <div class="recent-post">
