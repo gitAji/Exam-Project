@@ -79,7 +79,7 @@ function newList(posts){
         <div class="post">
         <a href="post.html?id=${post.id}">
           <div class="post-img">
-          <img src="${post._embedded['wp:featuredmedia']['0'].source_url}" alt="">
+          <img src="${post._embedded['wp:featuredmedia']['0'].source_url}" alt="${post.slug}">
 
           </div>
           <div class="post-details">
@@ -145,7 +145,7 @@ else{
     <div class="post">
     <a href="post.html?id=${post.id}">
       <div class="post-img">
-      <img src="${post._embedded['wp:featuredmedia']['0'].source_url}" alt="">
+      <img src="${post._embedded['wp:featuredmedia']['0'].source_url}" alt="${post.slug}">
 
       </div>
       <div class="post-details">
@@ -170,4 +170,3 @@ else{
 });
 }
 
-c

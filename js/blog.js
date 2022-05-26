@@ -23,7 +23,7 @@ function listPosts(posts) {
     <div class="post">
     <a href="post.html?id=${post.id}">
       <div class="post-img">
-      <img src="${post._embedded['wp:featuredmedia']['0'].source_url}" alt="">
+      <img src="${post._embedded['wp:featuredmedia']['0'].source_url}" alt="${post.slug}">
 
       </div>
       <div class="post-details">
@@ -94,6 +94,10 @@ function loadMoreList(posts){
   }
   out.innerHTML += loadMoreList;
 }
+
+
+
+// when all button clicked to filter posts by all category
 
 const all=document.getElementById("all");
 const food=document.getElementById("food");

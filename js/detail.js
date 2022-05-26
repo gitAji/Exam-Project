@@ -23,7 +23,7 @@ function listData(post) {
         <div class="post-heading"><h4>${post.title.rendered}</h4></div>
        
         <div class="post-image">
-        <img src="${post.featured_images.large}" alt="">
+        <img src="${post.featured_images.large}" alt="${post.slug}">
         </div>
         <div class="post-date">
         <p>
@@ -45,4 +45,39 @@ function listData(post) {
 
 
 
+}
+
+// recent post for the side bar
+const recentPosts=document.querySelector(".recent-posts");
+const recentUrl='https://blog.norgetamil.com/wp-json/wp/v2/posts?_embed';
+fetch(recentUrl)
+    .then(response => response.json())
+    .then(data => {
+    recentPost(data);
+        console.log(data);
+    })
+    .catch(error => recentPosts.innerHTML = "Something is wrong!");
+
+    function recentPost(posts) {
+    let recentList = "";
+  let post=posts.slice(0,3);
+  for (let post of posts) {
+       console.log(post);
+
+        recentList += `
+        <div class="recent-post">
+        <a href="post.html?id=${post.id}">
+        <div class="recent-post-img">
+        <img src="${post._embedded['wp:featuredmedia']['0'].source_url}" alt="${post.slug}">
+        </div>
+        <div class="recent-post-title">
+        <h4>
+        ${post.title.rendered}
+        </h4>
+        </div>
+        </a>
+        </div>
+        `;
+    }
+    recentPosts.innerHTML = recentList; //outputs the list of posts
 }

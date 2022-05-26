@@ -405,6 +405,7 @@ h1 {
 
 }
 
+
 /* section */
 .section {
     display: flex;
@@ -574,6 +575,50 @@ button.active {
 
 #lifestyle {
     border: 1px solid var(--lifestyle-color);
+}
+
+/* recent side bar */
+.blog-right {
+    width: 30%;
+    padding: 12px;
+    margin: 12px;
+    box-shadow: 0px 0px 20px var(--shadow-color);
+}
+
+.blog-right-title {
+    display: block;
+    margin: 20px auto;
+    text-align: center;
+    text-decoration: underline;
+
+}
+
+.blog-right-post {
+    display: block;
+    margin: 0 auto;
+    padding: 12px;
+
+}
+
+.recent-posts {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    flex-direction: column;
+    flex-wrap: wrap;
+    margin: 12px;
+
+}
+
+.recent-post {
+    margin: 0 auto;
+    margin-bottom: 12px;
+    padding: 30px;
+    max-width: 300px;
+    max-height: auto;
+    box-shadow: 0px 0px 10px var(--shadow-color);
+    cursor: pointer;
+
 }
 
 /* pagination starts here */
@@ -859,26 +904,7 @@ footer p {
     box-shadow: 0px 0px 20px var(--shadow-color);
 }
 
-.blog-right {
-    display: flex;
-    width: 30%;
-    padding: 12px;
-    margin: 12px;
-    box-shadow: 0px 0px 20px var(--shadow-color);
-}
 
-.blog-right-title {
-
-    margin: 20px auto;
-    align-items: center;
-}
-
-.blog-right-post {
-    display: block;
-    margin: 0 auto;
-    padding: 12px;
-
-}
 
 .blog-posts {
     display: flex;
@@ -951,10 +977,9 @@ footer p {
     width: 100%;
     height: 400px;
     margin: 0 auto;
-
     border: 1px solid var(--light-color);
     box-shadow: 0px 0px 20px var(--shadow-color);
-
+    object-fit: cover;
 }
 
 .post-image img {

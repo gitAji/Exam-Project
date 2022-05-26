@@ -47,7 +47,7 @@ function validateForm(e) {
 
 }
 
-
+// function to validate the form
 
 function lengthCheck(value, length) {
     if (value.trim().length > length) {
@@ -91,7 +91,7 @@ function checkEmail(email) {
             success.innerHTML = "Please fill all the fields";
             setTimeout(() => {
             success.style.display = "none";
-            }, 3000);
+            }, 5000);
         } else {
             errorMessage.style.display = "none";
             success.style.display = "block";
