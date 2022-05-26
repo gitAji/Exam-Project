@@ -19,8 +19,9 @@ fetch(postUrl)
     .catch(error => allPost.innerHTML = "Something is wrong!");
 
 function allPosts(posts) {
+  let allPostsList=posts.slice(0,8);
     let myList = "";
-    for (let post of posts)
+    for (let post of allPostsList)
 
      {
         console.log(post);
