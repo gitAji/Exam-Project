@@ -773,7 +773,7 @@ footer p {
 }
 
 .about-text p {
-    padding: 12px;
+    padding: 0px;
     text-align: left;
     margin-left: 2px;
     line-height: 1.5;
@@ -787,7 +787,7 @@ footer p {
 }
 
 .address p {
-    padding: 12px;
+    padding: 1px;
 
     text-align: left;
     margin-left: 50px;
