@@ -2,7 +2,7 @@
 // filter out posts by category
 
 
-const postUrl='https://blog.norgetamil.com/wp-json/wp/v2/posts?_embed&per_page=6&page=1';
+const postUrl='https://blog.norgetamil.com/wp-json/wp/v2/posts?_embed&per_page=8&page=1';
 const queryString = document.location.search;
 const params = new URLSearchParams(queryString);
 const id = params.get("id");
