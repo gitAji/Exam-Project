@@ -766,9 +766,8 @@ footer hr {
 }
 
 .about-text p {
-    padding: 0px;
-    text-align: left;
-    margin-left: 2px;
+    padding: 12px;
+    margin: 2px;
     line-height: 1.5;
     text-align: left;
 
