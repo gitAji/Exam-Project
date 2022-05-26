@@ -1,5 +1,5 @@
 
-const url='https://blog.norgetamil.com/wp-json/wp/v2/posts?_embed&per_page=6&page=1';
+const url='https://blog.norgetamil.com/wp-json/wp/v2/posts?_embed&per_page=8&page=1';
 const queryString = document.location.search;
 const params = new URLSearchParams(queryString);
 const id = params.get("id");
@@ -52,7 +52,7 @@ function listPosts(posts) {
 const loadMore=document.querySelector(".load-more");
 loadMore.addEventListener("click",function(){
   console.log("clicked");
-  const loadMoreUrl='https://blog.norgetamil.com/wp-json/wp/v2/posts?_embed&per_page=6&page=2';
+  const loadMoreUrl='https://blog.norgetamil.com/wp-json/wp/v2/posts?_embed&per_page=8&page=2';
   fetch(loadMoreUrl)
   .then(response => response.json())
   .then(data => {
