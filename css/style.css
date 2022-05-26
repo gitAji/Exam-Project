@@ -753,10 +753,6 @@ footer hr {
 
 }
 
-footer p {
-    white-space: pre-wrap;
-}
-
 .footer-about {
     display: flex;
     justify-content: space-between;
