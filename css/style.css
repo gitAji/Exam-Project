@@ -756,7 +756,7 @@ footer hr {
 .footer-about {
     display: flex;
     justify-content: space-between;
-    align-items: center;
+    align-items:flex-start;
     margin: 12px;
 }
 
@@ -767,7 +767,7 @@ footer hr {
 
 .about-text p {
     padding: 12px;
-    margin: 2px;
+    margin: 12px;
     line-height: 1.5;
     text-align: left;
 
@@ -779,10 +779,9 @@ footer hr {
 }
 
 .address p {
-    padding: 1px;
-
     text-align: left;
-    margin-left: 50px;
+    padding: 12px;
+    margin: 12px;
 }
 
 
@@ -996,7 +995,7 @@ footer hr {
 .post-body p {
     margin: 0;
     padding: 0;
-    justify-content:left;
+    justify-content: left;
     line-height: 1.5;
 }
 
