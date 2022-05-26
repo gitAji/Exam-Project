@@ -767,7 +767,7 @@ footer hr {
 
 .about-text p {
     padding: 12px;
-    margin: 12px;
+    margin: 2px;
     line-height: 1.5;
     text-align: left;
 
@@ -781,7 +781,8 @@ footer hr {
 .address p {
     text-align: left;
     padding: 12px;
-    margin: 12px;
+    margin: 2px;
+    margin-left: 12px;
 }
 
 
