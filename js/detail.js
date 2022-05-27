@@ -28,10 +28,10 @@ function listData(post) {
         <div class="post-date">
         <p>
             Posted Date: <span>${post.date}</span>
-
-        </p>
-        
-        </div>
+            <p>
+            
+            </div>   
+           
             <div class="post-body">
                 ${post.content.rendered}
             </div>
@@ -81,3 +81,12 @@ fetch(recentUrl)
     }
     recentPosts.innerHTML = recentList; //outputs the list of posts
 }
+
+// image viewer
+const image=document.querySelectorAll(".post-image");
+
+    image.onclick = function(e) {
+        e.preventDefault();
+        console.log(img);
+    }
+        

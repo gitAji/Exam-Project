@@ -7,7 +7,7 @@ const queryString = document.location.search;
 const params = new URLSearchParams(queryString);
 const id = params.get("id");
 const allPost=document.querySelector(".all-post-container");
-const latest=document.querySelector(".latest-container");
+const latest=document.querySelector(".latest");
 
  //url to fetch data from
 fetch(postUrl)

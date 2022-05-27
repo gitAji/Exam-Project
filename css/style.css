@@ -375,7 +375,7 @@ h1 {
     position: absolute;
     bottom: 0px;
     width: 100%;
-    padding: 20px;
+    padding: 25px;
     margin: 0 auto;
     color: var(--white-color);
     background-color: var(--primary-color);
@@ -395,14 +395,68 @@ h1 {
     margin-block: 15px;
 }
 
+.scroll-down {
+    display: block;
+    position: absolute;
+    bottom: 5px;
+    left: 50%;
+    color: var(--white-color);
+    background-color: var(--light-color);
+    z-index: 100;
+    transition: .5s ease-in-out;
+}
+.scroll-down:hover {
+    background-color: var(--white-color);
+    transition: .5s ease-in-out;
+}
+
+i fas{
+    font-size: 25px;
+    margin: 0 1px;
+    color: var(--white-color);
+}
+
+
 .latest {
     display: flex;
     flex-wrap: wrap;
+    justify-content: space-between;
     background-color: var(--white-color);
 
 }
 
+.left-arrow {
+    display: block;
+    background-color: var(--light-color);
+    color: var(--white-color);
+    width: 30px;
+    height: 30px;
 
+}
+
+.right-arrow {
+    display: block;
+    background-color: var(--light-color);
+    color: var(--white-color);
+    width: 30px;
+    height: 30px;
+
+}
+
+.left-arrow,
+.right-arrow i {
+    font-size: 30px;
+    color: var(--white-color);
+}
+
+.right-arrow:hover {
+    cursor: pointer;
+    background-color: var(--primary-color);
+}
+.left-arrow:hover {
+    cursor: pointer;
+    background-color: var(--primary-color);
+}
 /* section */
 .section {
     display: flex;
@@ -458,7 +512,7 @@ hr {
 }
 
 .post {
-    margin: 0 auto;
+    margin: 0 12px;
     margin-bottom: 12px;
     padding: 30px;
     max-width: 300px;
@@ -756,7 +810,7 @@ footer hr {
 .footer-about {
     display: flex;
     justify-content: space-between;
-    align-items:flex-start;
+    align-items: flex-start;
     margin: 12px;
 }
 
@@ -900,6 +954,7 @@ footer hr {
 
 .blog-posts {
     display: flex;
+    justify-content: space-evenly;
     flex-wrap: wrap;
     margin: 12px auto;
 
@@ -972,6 +1027,7 @@ footer hr {
     border: 1px solid var(--light-color);
     box-shadow: 0px 0px 20px var(--shadow-color);
     object-fit: cover;
+    cursor: pointer;
 }
 
 .post-image img {
@@ -1180,8 +1236,18 @@ footer hr {
 
     .trending-text {
         width: 100%;
-        padding: 80px;
-        bottom: 0px;
+        padding: 40px;
+        bottom: 8px;
+
+    }
+    .trending-text h4 {
+        font-size: 0.65rem;
+        margin: 0;
+        padding: 0;
+    }
+    .scroll-down
+    {
+        display: none;
     }
 
     .section {
