@@ -1249,6 +1249,12 @@ footer hr {
     {
         display: none;
     }
+    .left-arrow {
+        display: none;
+    }
+    .right-arrow {
+        display: none;
+    }
 
     .section {
         flex-direction: column;
