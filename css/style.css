@@ -930,7 +930,7 @@ footer hr {
 }
 
 .bottom div h3 {
-    font-size: .9   rem;
+    font-size: .9 rem;
     font-weight: bold;
     color: var(--dark-color);
     background-color: var(--shadow-color);
@@ -1220,7 +1220,7 @@ footer hr {
         flex-direction: column;
         justify-content: center;
         align-items: center;
-        margin: 0;
+        margin: 10px;
         padding: 0;
     }
 
@@ -1232,6 +1232,7 @@ footer hr {
     .search {
         display: none;
     }
+
 
     .hamburger {
         display: block;
