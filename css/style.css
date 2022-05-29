@@ -71,6 +71,10 @@ h6 {
     color: var(--dark-color);
     letter-spacing: 0.5px;
 }
+h1 {
+    font-size: 1.35rem;
+    text-transform: uppercase;
+}
 
 h2 {
     font-size: 22px;
@@ -81,13 +85,13 @@ h2 {
 }
 
 h3 {
-    font-size: 22px;
-    color: var(--light-color);
+    font-size: 1.15rem;
+    color: var(--dark-color);
     letter-spacing: 1.5px;
 }
 
 h4 {
-    font-size: 16px;
+    font-size: 1rem;
     margin: 0 0 12px 0;
     color: var(--dark-color);
 }
@@ -377,6 +381,7 @@ h1 {
     width: 100%;
     padding: 25px;
     margin: 0 auto;
+    text-align: center;
     color: var(--white-color);
     background-color: var(--primary-color);
 }
@@ -398,19 +403,20 @@ h1 {
 .scroll-down {
     display: block;
     position: absolute;
-    bottom: 5px;
+    bottom: 0px;
     left: 50%;
     color: var(--white-color);
     background-color: var(--light-color);
     z-index: 100;
     transition: .5s ease-in-out;
 }
+
 .scroll-down:hover {
     background-color: var(--white-color);
     transition: .5s ease-in-out;
 }
 
-i fas{
+i fas {
     font-size: 25px;
     margin: 0 1px;
     color: var(--white-color);
@@ -453,10 +459,12 @@ i fas{
     cursor: pointer;
     background-color: var(--primary-color);
 }
+
 .left-arrow:hover {
     cursor: pointer;
     background-color: var(--primary-color);
 }
+
 /* section */
 .section {
     display: flex;
@@ -567,7 +575,7 @@ hr {
 .post-label {
     display: flex;
     justify-content: space-between;
-    padding: 12px;
+    padding: 18px;
     font-size: 12px;
     margin-left: 50px;
     margin-right: 50px;
@@ -794,12 +802,14 @@ footer {
     text-align: center;
 }
 
-.footer-logo {
+.footer-logo h2{
     display: flex;
     padding: 20px 0px;
     margin: 12px;
-    font-size: 1.5rem;
-    color: var(--white-color);
+    font-size: 1rem;
+    letter-spacing: 1.5px;
+    color: var(--light-color);
+
 }
 
 footer hr {
@@ -1240,18 +1250,21 @@ footer hr {
         bottom: 8px;
 
     }
+
     .trending-text h4 {
         font-size: 0.8rem;
         margin: 0;
         padding: 0;
     }
-    .scroll-down
-    {
+
+    .scroll-down {
         display: none;
     }
+
     .left-arrow {
         display: none;
     }
+
     .right-arrow {
         display: none;
     }
@@ -1274,8 +1287,9 @@ footer hr {
     }
 
     .post-label {
-
         flex-wrap: wrap;
+        justify-content: space-between;
+
     }
 
     .post-label button {

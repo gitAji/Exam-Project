@@ -155,7 +155,7 @@ function allPosts(posts) {
 }
 // if food Category selected
 food.addEventListener("click",function(){
-  const foodUrl='https://blog.norgetamil.com/wp-json/wp/v2/posts?_embed&categories=3';
+  const foodUrl='https://blog.norgetamil.com/wp-json/wp/v2/posts?_embed?post_per_page=8?page=1&categories=3';
   fetch(foodUrl)
   .then(response => response.json())
   .then(data => {
@@ -167,6 +167,54 @@ food.addEventListener("click",function(){
 }
 );
 function foodPosts (posts) {
+    let myList = "";
+    for (let post of posts) {
+        console.log(post);
+
+        myList += `
+       
+    <div class="post">
+    <a href="post.html?id=${post.id}">
+      <div class="post-img">
+      <img src="${post._embedded['wp:featuredmedia']['0'].source_url}" alt="">
+
+      </div>
+      <div class="post-details">
+        <p>
+          Date: <span>${post.date}</span>
+          <p>
+            <p>Category: <span>${post._embedded["wp:term"][0][0].name} </span></p>
+
+      </div>
+      <div class="post-title">
+        <h4>
+        ${post.title.rendered}   
+        </h4>
+      </div>
+    </a>
+    </div>
+        `;
+ 
+    
+    }
+    out.innerHTML = myList;
+
+}
+
+// health Category
+health.addEventListener("click",function(){
+  const healthUrl='https://blog.norgetamil.com/wp-json/wp/v2/posts?_embed?post_per_page=8?page=1&categories=4';
+  fetch(healthUrl)
+  .then(response => response.json())
+  .then(data => {
+      healthPosts(data);
+      console.log(data);
+      
+  }
+  )
+}
+);
+function healthPosts (posts) {
     let myList = "";
     for (let post of posts) {
         console.log(post);
