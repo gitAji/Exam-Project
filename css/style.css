@@ -898,7 +898,7 @@ footer hr {
 }
 
 .bottom div h3 {
-    font-size: .9 rem;
+    font-size: 0.9 rem;
     font-weight: bold;
     color: var(--dark-color);
     background-color: var(--shadow-color);
