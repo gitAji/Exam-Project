@@ -1225,6 +1225,7 @@ footer hr {
 
     .trending-img {
   object-fit: cover;
+   height: 100vw;
     }
 
     .trending-img img {
@@ -1235,7 +1236,7 @@ footer hr {
 
     .trending-text {
         width: 100%;
-        padding: 50px;
+        padding: 20px;
         bottom: 0px;
 
     }
