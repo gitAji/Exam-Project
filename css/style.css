@@ -369,8 +369,8 @@ h1 {
 }
 
 .trending-img img {
-    max-width: 100%;
-    max-height: 100%;
+    width: 100%;
+    height: 100%;
     object-fit: cover;
 }
 
@@ -1226,8 +1226,8 @@ footer hr {
 
     .trending-text {
         width: 100%;
-        padding: 60px;
-        bottom: 8px;
+        padding: 50px;
+        bottom: 0px;
 
     }
 
