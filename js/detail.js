@@ -82,12 +82,7 @@ fetch(recentUrl)
     recentPosts.innerHTML = recentList; //outputs the list of posts
 }
 
-// image viewer
-const image=document.getElementsByClassName("post-image");
 
-image.onClick = function(){
-  console.log(hi);
-}
 
 
         
