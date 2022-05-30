@@ -83,10 +83,11 @@ fetch(recentUrl)
 }
 
 // image viewer
-const image=document.querySelectorAll(".post-image");
+const image=document.getElementsByClassName("post-image");
 
-    image.onclick = function(e) {
-        e.preventDefault();
-        console.log(img);
-    }
+image.onClick = function(){
+  console.log(hi);
+}
+
+
         

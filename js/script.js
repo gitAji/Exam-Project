@@ -72,7 +72,7 @@ function newLatest(){
 }
 newLatest();
 function newList(posts){
-    const latestList=posts.slice(0,3);
+    const latestList=posts.slice(0,4);
     console.log(latestList);
     let latestP="";
     for(let post of latestList){
@@ -80,7 +80,7 @@ function newList(posts){
         <div class="post">
         <a href="post.html?id=${post.id}">
           <div class="post-img">
-          <img src="${post._embedded['wp:featuredmedia']['0'].source_url}" alt="${post.slug}">
+          <img src="${post._ .source_url}" alt="${post.slug}">
 
           </div>
           <div class="post-details">
@@ -101,6 +101,21 @@ function newList(posts){
     }
     latest.innerHTML=latestP; // latest post displayed
 }
+
+// slider on the main page
+const leftArrow=document.querySelector(".left-arrow");
+const rightArrow=document.querySelector(".right-arrow");
+
+leftArrow.addEventListener("click",function(){
+ console.log("left arrow clicked");
+}
+);
+rightArrow.addEventListener("click",function(){
+ console.log("right arrow clicked");
+
+}
+);
+
 
 
 // filter out posts by category
@@ -170,4 +185,5 @@ else{
   allPost.innerHTML = catList;
 });
 }
+
 

@@ -679,38 +679,6 @@ button.active {
 
 }
 
-/* pagination starts here */
-.pagination {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    margin-block: 12px;
-}
-
-.pagination a {
-    padding: 10px;
-    margin: 0 5px;
-    border: 1px solid var(--dark-color);
-    color: var(--dark-color);
-    text-decoration: none;
-    background-color: var(--white-color);
-    cursor: pointer;
-}
-
-.pagination a:hover {
-    background-color: var(--primary-color);
-    color: var(--white-color);
-    transition: background 0.3s ease-in-out;
-}
-
-.pagination .active {
-    background-color: var(--primary-color);
-    color: var(--white-color);
-}
-
-/* pagination ends here */
-
-
 
 .connect-us {
 
