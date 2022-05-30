@@ -1222,7 +1222,11 @@ footer hr {
     }
 
 
-    .trending-img {}
+    .trending-img {
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+    }
 
     .trending-text {
         width: 100%;
