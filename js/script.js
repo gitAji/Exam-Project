@@ -80,7 +80,7 @@ function newList(posts){
         <div class="post">
         <a href="post.html?id=${post.id}">
           <div class="post-img">
-          <img src="${post._ .source_url}" alt="${post.slug}">
+          <img src="${post._embedded['wp:featuredmedia']['0'].source_url}" alt="${post.slug}">
 
           </div>
           <div class="post-details">
@@ -101,13 +101,12 @@ function newList(posts){
     }
     latest.innerHTML=latestP; // latest post displayed
 }
-
-// slider on the main page
+// slider section for the main page 
 const leftArrow=document.querySelector(".left-arrow");
 const rightArrow=document.querySelector(".right-arrow");
 
 leftArrow.addEventListener("click",function(){
- console.log("left arrow clicked");
+  console.log("left arrow clicked");
 }
 );
 rightArrow.addEventListener("click",function(){
