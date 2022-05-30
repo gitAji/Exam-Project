@@ -1232,11 +1232,12 @@ footer hr {
         width: 100%;
         height: auto;
         object-fit: cover;
+        background-size: cover;
     }
 
     .trending-text {
         width: 100%;
-        padding: 60px;
+        padding: 50px;
         bottom: 0px;
 
     }
